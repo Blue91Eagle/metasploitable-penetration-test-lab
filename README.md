@@ -1,31 +1,27 @@
 # 🛡 Metasploitable 2 Penetration Testing Lab
 
-## 📌 Overview
-This project demonstrates a full penetration testing lifecycle conducted in a controlled lab environment using Kali Linux against Metasploitable 2.
+## Overview
+Penetration testing lab performed in a controlled VirtualBox Host-Only network using Kali Linux against Metasploitable 2.  
+Scope: Recon → Exploitation → Privilege Escalation.
 
-The objective was to:
-- Perform reconnaissance
-- Identify vulnerable services
-- Exploit a known vulnerability
-- Gain shell access
-- Escalate privileges to root
+## Lab Environment
+- **Attacker:** Kali Linux — `192.168.56.4`
+- **Target:** Metasploitable 2 — `192.168.56.3`
+- **Network:** VirtualBox Host-Only
 
----
+## Method (High Level)
+1. **Recon:** Identify open ports/services (Nmap).
+2. **Exploit:** Gain initial shell via a vulnerable service.
+3. **PrivEsc:** Enumerate misconfigurations (SUID) and escalate to root.
 
-## 🖥 Lab Environment
+## Evidence (Screenshots)
+- `screenshots/01_nmap_scan.png`
+- `screenshots/02_vsftpd_exploit.png`
+- `screenshots/03_shell_access.png`
+- `screenshots/04_root_access.png`
 
-| Machine | IP Address |
-|----------|------------|
-| Kali Linux | 192.168.56.4 |
-| Metasploitable 2 | 192.168.56.3 |
+## Report
+Detailed write-up: `report/Metasploitable_PenTest_Report.pdf`
 
-Network Type: Host-Only (VirtualBox)
-
----
-
-## 🔍 Phase 1: Reconnaissance
-
-**Tool Used:** Nmap
-
-```bash
-nmap -sV 192.168.56.3
+## Disclaimer
+Educational use only in a controlled lab environment.
