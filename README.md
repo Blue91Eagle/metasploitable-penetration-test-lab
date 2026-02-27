@@ -15,7 +15,7 @@ Scope: Recon → Exploitation → Privilege Escalation.
 3. **PrivEsc:** Enumerate misconfigurations (SUID) and escalate to root.
 
 ## Evidence (Screenshots)
-- `screenshots/01_nmap_scan.png`
+![Nmap Scan](screenshots/01_nmap_scan.png)
 - `screenshots/02_vsftpd_exploit.png`
 - `screenshots/03_shell_access.png`
 - `screenshots/04_root_access.png`
