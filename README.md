@@ -15,18 +15,15 @@ Scope: Recon → Exploitation → Privilege Escalation.
 3. **PrivEsc:** Enumerate misconfigurations (SUID) and escalate to root.
 
 ## Evidence (Screenshots)
-
-### Nmap Scan
+---
 ![Nmap Scan](screenshots/01_nmap_scan.png)
 
-### Exploitation
 ![Exploit](screenshots/02_vsftpd_exploit.png)
 
-### Shell Access
 ![Shell](screenshots/03_shell_access.png)
 
-### Root Access
 ![Root](screenshots/04_root_access.png)
+---
 ## Report
 Detailed write-up: `report/Metasploitable_PenTest_Report.pdf`
 
